@@ -1,0 +1,16 @@
+create table if not exists dynamic_data(
+id varchar(255) not null,
+data_type varchar(255) null,
+depends_on varchar(255) null,
+table_name varchar(255) null,
+where_clause varchar(255) null,
+default_filter varchar(255) null,
+sort_clause varchar(255) null,
+search_columns varchar(255) null,
+column_alias varchar(255) null,
+is_alias_required char null,
+is_active char null,
+creation_date varchar(255) null,
+modified_date varchar(255) null,
+entity_state varchar(255) null,
+constraint dynamic_data_pk primary key(id));
